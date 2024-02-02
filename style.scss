@@ -49,6 +49,10 @@
     font-weight: 300;
     line-height: 32px;
     margin-bottom: 44px;
+
+    &-mob {
+        display: none;
+    }
 }
 
 .section__button {
@@ -113,3 +117,5 @@
     line-height: 32px;
     text-decoration: none;
 }
+
+@import 'mobile';
