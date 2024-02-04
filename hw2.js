@@ -44,7 +44,7 @@ alert(num);
 let age = Number(prompt("Сколько вам лет?"));
 alert(age);
 
-// Задание 9.0
+//9.0
 let user= {
     name: 'Vasya',
     age: 33,
