@@ -1,8 +1,8 @@
 // Задание 1
 let a = 10;
 alert(a);
-let b = 20;
-alert(b);
+a = 20;
+alert(a);
 
 // Задание 2
 let launchYear = 2007;
