@@ -21,7 +21,7 @@ alert(c * d);
 alert(c / d);
 
 // Задание 5
-const e = 2;
+const k = 2;
 let result = 2 ** 5;
 alert(result);
 
