@@ -1,0 +1,52 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+
+        &__section {
+            gap: 32px;
+        }
+    }
+
+    .section__head {
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 238px;
+        width: 343px;
+    }
+
+    .section__text {
+        display: none;
+
+        &-mob {
+            display: block;
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-style: normal;
+            line-height: 22px;
+            letter-spacing: 0px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+
+    .section__button {
+        margin-left: 54px;
+    }
+
+    .game-cards {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .item {
+        width: 343px;
+        height: 300px;
+    }
+}
