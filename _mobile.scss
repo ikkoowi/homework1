@@ -49,4 +49,46 @@
         width: 343px;
         height: 300px;
     }
+
+    .seasons {
+        padding-bottom: 85px;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .seasons__info {
+        padding-top: 51px;
+        margin-left: 16px;
+        margin-right: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seasons__head {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .seasons__text {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .seasons__img {
+        display: none;
+
+        &-mob {
+            display: block;
+            padding-left: 16px;
+        }
+    }
 }

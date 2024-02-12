@@ -67,3 +67,79 @@ console.log(user[info]);
 //10
 let hello = prompt("Как вас зовут?");
 alert(`Привет, ${hello}!`);
+
+//HW 2.3
+//1
+let password = 'пароль';
+let ask = prompt("Введите пароль");
+if (ask === "пароль") {
+  console.log("Пароль введен верно");
+} else {
+  console.log("Пароль введен неправильно");
+}
+
+//2
+let z = 7;
+if (z > 0 && z < 10) {
+  console.log("Верно");
+} else {
+  console.log("Неверно");
+}
+
+//3
+let w = 1;
+let e = 2;
+
+if (w > 100 || e > 100) {
+  console.log("Верно");
+} else {
+  console.log("Неверно");
+}
+
+//4
+let v = '2';
+let b = '3';
+alert(Number(v) + Number(b));
+
+//5
+let monthNumber = prompt("Введите номер месяца");
+switch (monthNumber) {
+  case 1:
+    console.log("Зима");
+    break;
+  case 2:
+    console.log("Зима");
+    break;
+  case 3:
+    console.log("Весна");
+    break;
+  case 4:
+    console.log("Весна");
+    break;
+  case 5:
+    console.log("Весна");
+    break;
+  case 6:
+    console.log("Лето");
+    break;
+  case 7:
+    console.log("Лето");
+    break;
+  case 8:
+    console.log("Лето");
+    break;
+  case 9:
+    console.log("Осень");
+    break;
+  case 10:
+    console.log("Осень");
+    break;
+  case 11:
+    console.log("Осень");
+    break;
+  case 12:
+    console.log("Зима");
+    break;
+  default:
+    console.log("Неверно")
+}
