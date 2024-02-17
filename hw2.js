@@ -159,8 +159,8 @@ while (p <= 5) {
   p++;
 }
 //3
-let r = 6;
-while (r >= 6 && r <= 22) {
+let r = 7;
+while (r >= 7 && r <= 22) {
   console.log(r);
   r++;
 }
@@ -171,7 +171,7 @@ const obj = {
   Vasya: 300,
   Petya: 400
 }
-for (key in obj) {
+for (let key in obj) {
   console.log(`${key} - зарплата ${obj[key]} долларов`)
 }
 
