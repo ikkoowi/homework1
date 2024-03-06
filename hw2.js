@@ -189,3 +189,106 @@ for (let dayNumber = 1; dayNumber <= 31; dayNumber += 7) {
   console.log(`Сегодня пятница ${dayNumber}-е число. Необходимо подготовить отчет.`);
 }
 
+//HW 2.5
+
+//1
+let passwords = 'пароль';
+let asks = prompt("Введите пароль");
+if (asks === "пароль") {
+  console.log("Пароль введен верно");
+} else {
+  console.log("Пароль введен неправильно");
+}
+
+//2
+let t = 7;
+if (t > 0 && t < 10) {
+  console.log("Верно");
+} else {
+  console.log("Неверно");
+}
+
+//3
+let q = 1;
+let s = 300;
+
+if (q > 100 || s > 100) {
+  console.log("Верно");
+} else {
+  console.log("Неверно");
+}
+
+//4
+let u = '2';
+let x = '3';
+alert(Number(u) + Number(x));
+
+//5.
+
+function parame(f, g) {
+  if (isNaN(f) || isNaN(g)) {
+    return `Одно или оба значения не являются числом`;
+  } else {
+    return f * g;
+  }
+}
+
+console.log(parame(2, 3));
+
+//6
+
+function params() {
+  let numbr = prompt("Введите число");
+  if (isNaN(numbr)) {
+    return 'Переданный параметр не является числом';
+  } else {
+    return numbr + ' в кубе равняется ' + numbr ** 3;
+  }
+}
+console.log(params());
+
+//7
+
+function area() {
+  return Math.round(Math.PI * this.radius ** 2);
+}
+
+function perim() {
+  return Math.round(2 * Math.PI * this.radius);
+}
+
+const circle1 = {
+  radius: 2,
+  getArea: area,
+  getPerimeter: perim
+}
+
+const circle2 = {
+  radius: 3,
+  getArea: area,
+  getPerimeter: perim
+}
+
+console.log(circle1.getArea());
+console.log(circle2.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getPerimeter());
+
+//8. 
+
+let month = Number(prompt("Введите номер месяца"));
+
+function seasons(month) {
+  if (month === 1 || month === 2 || month === 12) {
+    return "Зима";
+  } else if (month === 3 || month === 4 || month === 5) {
+    return "Весна";
+  } else if (month === 6 || month === 7 || month === 8) {
+    return "Лето";
+  } else if (month === 9 || month === 10 || month === 11) {
+    return "Зима";
+  } else {
+    return "Такого месяца не существует";
+  }
+}
+console.log(seasons(month));
