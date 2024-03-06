@@ -91,4 +91,48 @@
             padding-left: 16px;
         }
     }
+
+    .remember {
+        padding-bottom: 90px;
+        flex-direction: column;
+        gap: 64px;
+      }
+      
+      .remember__img {
+        display: none;
+      
+        &-mob {
+          display: block;
+          padding-left: 16px;
+        }
+      }
+      
+      .remember__info {
+        padding-top: 51px;
+        margin-left: 16px;
+        margin-right: 16px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .remember__head {
+        color: rgb(255, 255, 255);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+      letter-spacing: 0px;
+      text-align: center;
+      }
+      
+      .remember__text {
+        color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0px;
+      text-align: center;
+      }
+      
+      
 }
+

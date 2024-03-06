@@ -143,3 +143,49 @@ switch (monthNumber) {
   default:
     console.log("Неверно")
 }
+
+//HW 2.4
+
+// 1
+let i = 0;
+while (i < 2) {
+  console.log("Привет!");
+  i++;
+}
+//2
+let p = 1;
+while (p <= 5) {
+  console.log(p);
+  p++;
+}
+//3
+let r = 7;
+while (r >= 7 && r <= 22) {
+  console.log(r);
+  r++;
+}
+
+//4
+const obj = {
+  Kolya: 200,
+  Vasya: 300,
+  Petya: 400
+}
+for (let key in obj) {
+  console.log(`${key} - зарплата ${obj[key]} долларов`)
+}
+
+//5
+let numb = 0;
+let n;
+
+for (n = 1000; n >= 50; n = n / 2) {
+  numb = numb + 1;
+}
+console.log(`Получилось число ${n}. Число итераций равно ${numb}`);
+
+//6
+for (let dayNumber = 1; dayNumber <= 31; dayNumber += 7) {
+  console.log(`Сегодня пятница ${dayNumber}-е число. Необходимо подготовить отчет.`);
+}
+
