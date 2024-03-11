@@ -192,36 +192,50 @@ for (let dayNumber = 1; dayNumber <= 31; dayNumber += 7) {
 //HW 2.5
 
 //1
-let passwords = 'пароль';
-let asks = prompt("Введите пароль");
-if (asks === "пароль") {
-  console.log("Пароль введен верно");
-} else {
-  console.log("Пароль введен неправильно");
+
+function little(num1, num2) {
+  if (num1 <= num2) {
+    return num1;
+  } else {
+    return num2;
+  }
 }
 
 //2
-let t = 7;
-if (t > 0 && t < 10) {
-  console.log("Верно");
-} else {
-  console.log("Неверно");
+
+function even(numb) {
+  if (numb % 2 === 0) {
+    return "Число четное";
+  } else {
+    return "Число нечетное";
+  }
 }
 
-//3
-let q = 1;
-let s = 300;
+//3.1
 
-if (q > 100 || s > 100) {
-  console.log("Верно");
-} else {
-  console.log("Неверно");
+function double(par) {
+  console.log(par ** 2);
+}
+
+//3.2
+
+function dbl(prm) {
+  return prm ** 2;
 }
 
 //4
-let u = '2';
-let x = '3';
-alert(Number(u) + Number(x));
+
+function hello() {
+  let howOld = prompt("Сколько Вам лет?");
+
+  if (howOld < 0) {
+    alert(`Вы ввели неправильное значение`);
+  } else if (howOld > 0 && howOld <= 12) {
+    alert(`Привет, друг!`);
+  } else if (howOld >= 13) {
+    alert(`Добро пожаловать!`);
+  }
+}
 
 //5.
 
