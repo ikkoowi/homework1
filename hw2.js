@@ -306,3 +306,165 @@ function seasons(month) {
   }
 }
 console.log(seasons(month));
+
+//hw2.6
+
+//1
+
+const arrTillTen = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < arrTillTen.length; i++) {
+  console.log(arrTillTen[i]);
+  if (arrTillTen[i] === 10) break;
+}
+
+//2
+
+const arrIndex = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < arrIndex.length; i++) {
+
+  if (arrIndex[i] === 4) {
+    console.log(i);
+  }
+}
+
+//3.
+
+let arrJoin = [1, 3, 5, 10, 20];
+arrJoin = arrJoin.join(' ');
+
+console.log(arrJoin);
+
+//4.
+
+const arrOne = [];
+
+for (let i = 0; i < 3; i++) {
+  arrOne[i] = [];
+  for (let j = 0; j < 3; j++) {
+    arrOne[i][j] = 1;
+  }
+}
+console.log(arrOne);
+
+//5. 
+
+const arrFive = [1, 1, 1];
+
+for (n = 0; n < 3; n++) {
+  arrFive.push(2);
+}
+
+console.log(arrFive);
+
+//6.
+let arrSix = [9, 8, 7, 'a', 6, 5];
+
+arrSix = arrSix.sort();
+arrSix.pop();
+
+console.log(arrSix);
+
+//7.
+
+let arrSeven = [9, 8, 7, 6, 5];
+
+let quessNum = Number(prompt("Угадай число"));
+
+if (arrSeven.includes(quessNum)) {
+  alert('Угадал');
+} else {
+  alert('Не угадал');
+}
+
+//8.
+
+let eight = 'abcdef';
+
+let arrEight = eight.split('');
+
+arrEight.reverse();
+eight = arrEight.join('');
+
+console.log(eight);
+
+//9.
+
+let arrNine = [
+  [1, 2, 3],
+  [4, 5, 6]
+];
+let arrNineNew = [].concat(arrNine[0], arrNine[1]);
+
+console.log(arrNineNew);
+
+//10.
+const arrTen = [1, 5, 7, 3, 6];
+
+for (let t = 0; t < arrTen.length; t++) {
+  let sumTen = arrTen[t] + arrTen[t + 1];
+  console.log(sumTen);
+}
+
+//11.
+
+const arrEleven = [1, 2, 3, 4, 5];
+
+function squarEleven(k) {
+  const arrElevenNew = k.map((number) => number ** 2);
+  return arrElevenNew;
+}
+
+console.log(squarEleven(arrEleven));
+
+//12. 
+
+const arrTwelwe = ['вышел', 'зайчик', 'погулять'];
+
+let twelweLength = function(array) {
+  const arrTwelweLength = array.map((word) => word.length);
+  return arrTwelweLength;
+}
+
+console.log(twelweLength(arrTwelwe));
+
+//13. 
+
+const arrThree = [6, -7, 8, -9, -1];
+
+let minusThree = function(array) {
+  const arrThreeNew = array.filter(nmbrs => nmbrs < 0);
+  return arrThreeNew;
+}
+
+console.log(minusThree(arrThree));
+
+//14. 
+
+const arrRandom = Array.from({
+  length: 10
+}, () => Math.floor(Math.random() * 13));
+
+console.log(arrRandom);
+
+const arrFilter = arrRandom.filter(x => x % 2 === 0);
+
+console.log(arrFilter);
+
+//15. 
+
+const arrFifteen = Array.from({
+  length: 6
+}, () => Math.floor(Math.random() * 10) + 1);
+
+console.log(arrFifteen);
+
+let allSum = arrFifteen.reduce((a, b) => a + b);
+
+console.log(allSum);
+
+let average = allSum / arrFifteen.length;
+
+console.log(average);
+
