@@ -25,17 +25,17 @@
 
 <section class="game-cards-section center">
 <div class="game-cards">
-    <a class="item item-1" href="">Игра 1</a>
+    <a class="item item-1" href="#monthNumber">Игра 1</a>
     <a class="item item-2" href="">Игра 2</a>
     <a class="item item-3" href="">Игра 3</a>
 </div>
 </section>
 
-<section class="seasons">
+<section class="seasons" id="monthNumber">
     <div class="seasons__info">
       <h1 class="seasons__head">Времена года!</h1>
       <p class="seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-      <button class="seasons__button">Играть!</button>
+      <button class="seasons__button" onclick="alert(quessTimeOfYear());">Играть!</button>
     </div>
     <div class="seasons__img">
       <a href="#"><svg width="485.000000" height="333.000000" viewBox="0 0 485 333" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -449,6 +449,7 @@
     <h1 class="puzzle__head">Игра в загадки</h1>
     <p class="puzzle__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам <br/> подсказку. У вас будет три попытки и две подсказки.</p>
     <button class="puzzle__button">Играть!</button>
+    <script src="monthNum.js"></script>
   </div>
 </section>
 <footer class="footer">
