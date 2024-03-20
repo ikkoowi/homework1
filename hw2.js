@@ -189,3 +189,120 @@ for (let dayNumber = 1; dayNumber <= 31; dayNumber += 7) {
   console.log(`Сегодня пятница ${dayNumber}-е число. Необходимо подготовить отчет.`);
 }
 
+//HW 2.5
+
+//1
+
+function little(num1, num2) {
+  if (num1 <= num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+//2
+
+function even(numb) {
+  if (numb % 2 === 0) {
+    return "Число четное";
+  } else {
+    return "Число нечетное";
+  }
+}
+
+//3.1
+
+function double(par) {
+  console.log(par ** 2);
+}
+
+//3.2
+
+function dbl(prm) {
+  return prm ** 2;
+}
+
+//4
+
+function hello() {
+  let howOld = prompt("Сколько Вам лет?");
+
+  if (howOld < 0) {
+    alert(`Вы ввели неправильное значение`);
+  } else if (howOld > 0 && howOld <= 12) {
+    alert(`Привет, друг!`);
+  } else if (howOld >= 13) {
+    alert(`Добро пожаловать!`);
+  }
+}
+
+//5.
+
+function parame(f, g) {
+  if (isNaN(f) || isNaN(g)) {
+    return `Одно или оба значения не являются числом`;
+  } else {
+    return f * g;
+  }
+}
+
+console.log(parame(2, 3));
+
+//6
+
+function params() {
+  let numbr = prompt("Введите число");
+  if (isNaN(numbr)) {
+    return 'Переданный параметр не является числом';
+  } else {
+    return numbr + ' в кубе равняется ' + numbr ** 3;
+  }
+}
+console.log(params());
+
+//7
+
+function area() {
+  return Math.round(Math.PI * this.radius ** 2);
+}
+
+function perim() {
+  return Math.round(2 * Math.PI * this.radius);
+}
+
+const circle1 = {
+  radius: 2,
+  getArea: area,
+  getPerimeter: perim
+}
+
+const circle2 = {
+  radius: 3,
+  getArea: area,
+  getPerimeter: perim
+}
+
+console.log(circle1.getArea());
+console.log(circle2.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getPerimeter());
+
+//8. 
+
+let month = Number(prompt("Введите номер месяца"));
+
+function seasons(month) {
+  if (month === 1 || month === 2 || month === 12) {
+    return "Зима";
+  } else if (month === 3 || month === 4 || month === 5) {
+    return "Весна";
+  } else if (month === 6 || month === 7 || month === 8) {
+    return "Лето";
+  } else if (month === 9 || month === 10 || month === 11) {
+    return "Зима";
+  } else {
+    return "Такого месяца не существует";
+  }
+}
+console.log(seasons(month));
