@@ -562,5 +562,132 @@ function formatDate(currentDate) {
 
 console.log(formatDate(date));
 
+//HW 2.8
+//1. 
+const people = [{
+  name: 'Глеб',
+  age: 29
+},
+{
+  name: 'Анна',
+  age: 17
+},
+{
+  name: 'Олег',
+  age: 7
+},
+{
+  name: 'Оксана',
+  age: 47
+}
+];
+
+console.log(people.sort(function(a, b) {
+if (a.age > b.age) {
+  return 1;
+}
+if (a.age < b.age) {
+  return -1;
+}
+return 0;
+}));
+
+//2. 
+
+function isPositive(item) {
+if (item > 0) {
+  return item;
+}
+}
+
+function isMale(item) {
+if (item.gender === 'male') {
+  return item;
+}
+}
+
+function filter(array, func) {
+const output = [];
+
+for (let p = 0; p < array.length; p++) {
+  if (func(array[p])) {
+    output.push(func(array[p]));
+  }
+}
+return output;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const peoples = [{
+  name: 'Глеб',
+  gender: 'male'
+},
+{
+  name: 'Анна',
+  gender: 'female'
+},
+{
+  name: 'Олег',
+  gender: 'male'
+},
+{
+  name: 'Оксана',
+  gender: 'female'
+}
+];
+
+console.log(filter(peoples, isMale));
+
+//3. 
+
+let int = 3000;
+
+let printCurrentDate = () => {
+const currentDate = new Date();
+
+console.log(currentDate);
+
+const interval = setInterval(() => {
+  console.log(new Date());
+}, int)
+
+setTimeout(() => {
+  clearInterval(interval);
+  console.log('30 сек прошло');
+}, 30 * 1000)
+}
+
+// printCurrentDate();
+
+//4. 
+
+function delayForSecond(callback) {
+  setTimeout(() => {
+  callback();
+  }, 1000)
+ 
+}
+
+delayForSecond(function () {
+ console.log('Привет, Глеб!');
+})
+
+//5. 
+
+function delayForSecond(cb) {
+  setTimeout(() => {
+      console.log('Прошла одна секунда');
+      if(cb) {  cb(); }
+  }, 1000)
+}
+
+function sayHi (name) {
+  console.log('Привет, ${name}!');
+}
+
+delayForSecond(() => {
+sayHi('Глеб');
+})
 
 
