@@ -468,3 +468,99 @@ let average = allSum / arrFifteen.length;
 
 console.log(average);
 
+
+//HW 2.7
+
+//1.
+
+let str = 'js';
+
+console.log(str.toUpperCase());
+
+//2. 
+
+const arrWords = ['Мем', 'Мама', 'Малыш', 'Мороженое', 'Март', 'Мопс'];
+let strWords = 'ма';
+
+function searchWords(array, str) {
+  return array.filter(el => el.toLowerCase().startsWith(str));
+}
+
+console.log(searchWords(arrWords, strWords));
+
+//3. 
+
+let myNumb = 32.58884;
+
+console.log(Math.floor(myNumb));
+console.log(Math.ceil(myNumb));
+console.log(Math.round(myNumb));
+
+//4.
+
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+//5. 
+
+function randomNum() {
+  console.log(Math.floor(Math.random() * 11) + 1);
+}
+randomNum();
+
+//6. 
+
+function letTillX(joy) {
+  const arrTillX = Array.from({
+    length: Math.floor(joy / 2)
+  }, () => Math.round(Math.random() * joy));
+  return arrTillX;
+}
+console.log(letTillX(11));
+
+//7. 
+
+function roundThis(minNum, maxNum) {
+  let thisNum = Math.ceil(Math.random() * (maxNum - minNum) + minNum);
+  return thisNum;
+}
+
+console.log(roundThis(1, 9));
+
+//8. 
+
+let nowDate = new Date();
+console.log(nowDate);
+
+//9. 
+
+let currentDate = new Date();
+
+currentDate.setDate(currentDate.getDate() + 73);
+let year = currentDate.getFullYear();
+let monthh = currentDate.getMonth() + 1;
+let day = currentDate.getDate();
+
+if (monthh < 10) {
+  monthh = '0' + monthh;
+}
+
+console.log(`Через 73 дня будет: ${day}.${monthh}.${year}`);
+
+//10. 
+
+let date = new Date();
+const weekDays = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+const months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+
+function formatDate(currentDate) {
+  let fullDate = currentDate.getDate() + ' ' + months[currentDate.getMonth()] + ' ' + currentDate.getFullYear() + ' ' + '- это' + ' ' + weekDays[currentDate.getDay()];
+  let fullTime = currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds();
+  let resultDate = `Дата: ${fullDate}. Время: ${fullTime}`;
+  return resultDate;
+}
+
+console.log(formatDate(date));
+
+
+

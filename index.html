@@ -26,7 +26,7 @@
 <section class="game-cards-section center">
 <div class="game-cards">
     <a class="item item-1" href="#monthNumber">Игра 1</a>
-    <a class="item item-2" href="">Игра 2</a>
+    <a class="item item-2" href="#quessWords">Игра 2</a>
     <a class="item item-3" href="">Игра 3</a>
 </div>
 </section>
@@ -219,7 +219,7 @@
     </div>
   </section>
 
-<section class="remember">
+<section class="remember" id="quessWords">
   <div class="remember__img">
     <a href="#"><svg width="481.000000" height="322.000000" viewBox="0 0 481 322" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <desc>
@@ -441,7 +441,7 @@
   <div class="remember__info">
     <h1 class="remember__head">Запомни слова</h1>
     <p class="remember__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
-    <button class="remember__button">Играть!</button>
+    <button class="remember__button" onclick="alert(remember());" >Играть!</button>
   </div>
 </section>
 <section class="puzzle">
@@ -450,6 +450,8 @@
     <p class="puzzle__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам <br/> подсказку. У вас будет три попытки и две подсказки.</p>
     <button class="puzzle__button">Играть!</button>
     <script src="monthNum.js"></script>
+    <script src="quessWord.js"></script>
+
   </div>
 </section>
 <footer class="footer">
